@@ -84,3 +84,20 @@ fun CardMahasiswa(
             )
         }
 
+        Image(
+            painter = painterResource(logo),
+            contentDescription = stringResource(R.string.desc_logo),
+            modifier = Modifier.size(dimensionResource(R.dimen.logo_size))
+        )
+    }
+}
+
+@Composable
+fun ActivitasPertama(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(colorResource(R.color.background_screen))
+            .padding(dimensionResource(R.dimen.screen_padding)),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
