@@ -101,3 +101,61 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             .padding(dimensionResource(R.dimen.screen_padding)),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Spacer(Modifier.height(dimensionResource(R.dimen.top_spacing)))
+
+        Text(
+            text = stringResource(R.string.title_jurusan),
+            color = colorResource(R.color.text_title),
+            fontSize = ukuranTeks(R.dimen.text_title),
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center
+        )
+        Text(
+            text = stringResource(R.string.title_universitas),
+            color = colorResource(R.color.text_title),
+            fontSize = ukuranTeks(R.dimen.text_subtitle),
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center
+        )
+
+        Spacer(Modifier.height(dimensionResource(R.dimen.spacing_large)))
+
+        Column(
+            verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.spacing_medium))
+        ) {
+            CardMahasiswa(
+                logo = R.drawable.logoumy,
+                nama = R.string.nama_1,
+                alamat = R.string.alamat_1,
+                warnaCard = R.color.card_gray,
+                warnaAlamat = R.color.yellow
+            )
+            CardMahasiswa(
+                logo = R.drawable.logoumy,
+                nama = R.string.nama_2,
+                telepon = R.string.telp_2,
+                alamat = R.string.alamat_2,
+                warnaCard = R.color.card_purple,
+                warnaAlamat = R.color.yellow
+            )
+            CardMahasiswa(
+                logo = R.drawable.logoumy,
+                nama = R.string.nama_3,
+                telepon = R.string.telp_3,
+                alamat = R.string.alamat_3,
+                warnaCard = R.color.card_blue,
+                warnaAlamat = R.color.white
+            )
+            CardMahasiswa(
+                logo = R.drawable.logoumy,
+                nama = R.string.nama_4,
+                telepon = R.string.telp_4,
+                alamat = R.string.alamat_4,
+                warnaCard = R.color.card_green,
+                warnaAlamat = R.color.white
+            )
+        }
+
+
+    }
+}
