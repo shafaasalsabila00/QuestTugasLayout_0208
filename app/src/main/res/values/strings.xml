@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">tugas pertemuan 4</string>
+
+    <string name="title_jurusan">Teknologi Informasi</string>
+    <string name="title_universitas">Universitas Muhammadiyah Yogyakarta</string>
+
 </resources>
