@@ -30,3 +30,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 
+@Composable
+fun ukuranTeks(@DimenRes id: Int): TextUnit =
+    with(LocalDensity.current) { dimensionResource(id).toSp() }
+
