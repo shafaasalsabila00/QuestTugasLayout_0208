@@ -2,5 +2,9 @@
 <resources>
     <color name="background_screen">#F9F8FF</color>
     <color name="text_title">#1C1B1F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="cyan">#00FFFF</color>
+
 
 </resources>
