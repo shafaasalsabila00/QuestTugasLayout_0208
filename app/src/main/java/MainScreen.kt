@@ -63,4 +63,24 @@ fun CardMahasiswa(
             modifier = Modifier
                 .weight(1f)
                 .padding(horizontal = dimensionResource(R.dimen.spacing_medium))
-        )
+        ) {
+            Text(
+                text = stringResource(nama),
+                color = colorResource(R.color.white),
+                fontSize = ukuranTeks(R.dimen.text_name),
+                fontWeight = FontWeight.Bold
+            )
+            if (telepon != null) {
+                Text(
+                    text = stringResource(telepon),
+                    color = colorResource(warnaTelepon),
+                    fontSize = ukuranTeks(R.dimen.text_detail)
+                )
+            }
+            Text(
+                text = stringResource(alamat),
+                color = colorResource(warnaAlamat),
+                fontSize = ukuranTeks(R.dimen.text_detail)
+            )
+        }
+
