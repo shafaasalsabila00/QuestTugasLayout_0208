@@ -3,5 +3,8 @@
 
     <string name="title_jurusan">Teknologi Informasi</string>
     <string name="title_universitas">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="copyright">Copyright, 2026</string>
+    <string name="desc_logo">Logo Universitas Muhammadiyah Yogyakarta</string>
+
 
 </resources>
