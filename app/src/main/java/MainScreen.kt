@@ -156,6 +156,11 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             )
         }
 
-
+        Spacer(Modifier.weight(1f))
+        Text(
+            text = stringResource(R.string.copyright),
+            color = colorResource(R.color.text_title),
+            fontSize = ukuranTeks(R.dimen.text_copyright)
+        )
     }
 }
