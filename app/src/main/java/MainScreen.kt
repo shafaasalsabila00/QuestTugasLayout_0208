@@ -34,3 +34,22 @@ import androidx.compose.ui.unit.TextUnit
 fun ukuranTeks(@DimenRes id: Int): TextUnit =
     with(LocalDensity.current) { dimensionResource(id).toSp() }
 
+@Composable
+fun CardMahasiswa(
+    @DrawableRes logo: Int,
+    @StringRes nama: Int,
+    @StringRes alamat: Int,
+    @ColorRes warnaCard: Int,
+    @ColorRes warnaAlamat: Int,
+    @StringRes telepon: Int? = null,
+    @ColorRes warnaTelepon: Int = R.color.cyan,
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(dimensionResource(R.dimen.card_corner)))
+            .background(colorResource(warnaCard))
+            .padding(dimensionResource(R.dimen.card_padding)),
+        verticalAlignment = Alignment.CenterVertically
+    )
